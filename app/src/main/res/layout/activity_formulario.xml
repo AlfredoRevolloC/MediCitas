@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos del Paciente"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Cuadro de texto (EditText) -->
+    <EditText
+        android:id="@+id/etNombrePaciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la Especialidad:"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RadioGroup nos asegura que solo se pueda elegir una opción a la vez -->
+    <RadioGroup
+        android:id="@+id/rgEspecialidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp">
+
+        <RadioButton
+            android:id="@+id/rbGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicina General"/>
+
+        <RadioButton
+            android:id="@+id/rbOdontologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odontología"/>
+
+        <RadioButton
+            android:id="@+id/rbPediatria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pediatría"/>
+    </RadioGroup>
+
+    <!-- Botón para avanzar -->
+    <Button
+        android:id="@+id/btnAgendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AGENDAR CITA"
+        android:backgroundTint="#4CAF50"/>
+
+</LinearLayout>
